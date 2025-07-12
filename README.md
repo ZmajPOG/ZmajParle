@@ -30,9 +30,9 @@ ZmajParle is an Android app that helps users learn new languages by creating per
 
 ## Screenshots
 
-<img src="screenshots/screenshot1.jpg" alt="Main Vocabulary Screen" width="250">
-<img src="screenshots/screenshot2.jpg" alt="Sentence inserter" width="250">
-<img src="screenshots/screenshot3.jpg" alt="Sentence builder" width="250">
+<img src="screenshot1.jpg" alt="Main Vocabulary Screen" width="250">
+<img src="screenshot2.jpg" alt="Sentence inserter" width="250">
+<img src="screenshot3.jpg" alt="Sentence builder" width="250">
 
 ---
 
