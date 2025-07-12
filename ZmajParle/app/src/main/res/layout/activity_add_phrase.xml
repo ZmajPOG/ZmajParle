@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/input_bg"
+    android:textColor="@color/text_light"
+    android:paddingLeft="32dp"
+    android:paddingRight="32dp"
+    android:paddingTop="64dp"
+    android:paddingBottom="24dp"
+    android:fitsSystemWindows="true">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Phrase or Word"
+        android:textColor="#2A3FFF"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="22dp"/>
+
+    <!-- Phrase input -->
+    <EditText
+        android:id="@+id/inputPhrase"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Phrase or word"
+        android:textColor="@color/text_light"
+        android:textColorHint="@color/zmaj_green"
+        android:background="@drawable/btn_outline"
+        android:padding="14dp"
+        android:textSize="18sp"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Spinner row with arrow -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="16dp">
+
+        <Spinner
+            android:id="@+id/typeSpinner"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:spinnerMode="dropdown"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:entries="@array/phrase_types"
+            android:background="@drawable/spinner_bg"
+            android:popupBackground="@drawable/spinner_dropdown_bg"/>
+
+
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@android:drawable/arrow_down_float"
+            android:contentDescription="Dropdown arrow"
+            android:layout_marginLeft="8dp"/>
+    </LinearLayout>
+
+    <!-- Tags input -->
+    <EditText
+        android:id="@+id/tagEdit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Tags (comma separated)"
+        android:textColor="@color/text_light"
+        android:textColorHint="@color/zmaj_orange"
+        android:background="@drawable/btn_outline"
+        android:padding="14dp"
+        android:textSize="16sp"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Favorite checkbox -->
+    <CheckBox
+        android:id="@+id/favoriteCheck"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Favorite"
+        android:textColor="#19C37D"
+        android:layout_marginBottom="20dp"/>
+
+    <!-- Save button -->
+    <Button
+        android:id="@+id/savePhraseBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Save"
+        android:background="@drawable/btn_outline"
+        android:textColor="@color/zmaj_red"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:padding="14dp"/>
+</LinearLayout>

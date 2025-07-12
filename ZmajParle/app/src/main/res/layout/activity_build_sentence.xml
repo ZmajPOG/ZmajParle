@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/input_bg"
+    android:textColor="@color/text_light"
+    android:padding="14dp"
+    android:textSize="18sp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:paddingTop="32dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Build Sentence"
+        android:textColor="#FF355D"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <!-- Subject Tag Search -->
+    <EditText
+        android:id="@+id/searchSubjectEdit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/btn_outline"
+        android:hint="🔍 Filter Subjects by tag"
+        android:textColor="@color/text_light"
+        android:textColorHint="@color/zmaj_orange"
+        android:padding="10dp"
+        android:textSize="15sp"/>
+
+    <Spinner
+        android:id="@+id/subjectSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <!-- Verb Tag Search -->
+    <EditText
+        android:id="@+id/searchVerbEdit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/btn_outline"
+        android:hint="🔍 Filter Verbs by tag"
+        android:textColor="@color/text_light"
+        android:textColorHint="@color/zmaj_green"
+        android:padding="10dp"
+        android:textSize="15sp"/>
+
+    <Spinner
+        android:id="@+id/verbSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <!-- Object Tag Search -->
+    <EditText
+        android:id="@+id/searchObjectEdit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/btn_outline"
+        android:hint="🔍 Filter Objects by tag"
+        android:textColor="@color/text_light"
+        android:textColorHint="@color/zmaj_orange"
+        android:padding="10dp"
+        android:textSize="15sp"/>
+
+    <Spinner
+        android:id="@+id/objectSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <!-- Modifier Tag Search -->
+    <EditText
+        android:id="@+id/searchModifierEdit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/btn_outline"
+        android:hint="🔍 Filter Modifiers by tag"
+        android:textColor="@color/text_light"
+        android:textColorHint="@color/zmaj_green"
+        android:padding="10dp"
+        android:textSize="15sp"/>
+
+    <Spinner
+        android:id="@+id/modifierSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/buildBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Assemble Sentence"
+        android:backgroundTint="#2A3FFF"
+        android:textColor="#FFF"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:id="@+id/resultText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#19C37D"
+        android:textSize="20sp"
+        android:layout_marginTop="24dp"/>
+
+    <TextView
+        android:id="@+id/translationText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/zmaj_blue"
+        android:textSize="18sp"
+        android:textStyle="italic"
+        android:layout_marginTop="12dp"/>
+
+
+    <Button
+        android:id="@+id/playAudioBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Play Audio"
+        android:backgroundTint="#FF355D"
+        android:textColor="#FFF"
+        android:layout_marginTop="12dp"/>
+
+</LinearLayout>

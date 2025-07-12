@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">ZmajParle</string>
+    <string-array name="phrase_types">
+        <item>Subject</item>
+        <item>Verb</item>
+        <item>Object</item>
+        <item>Modifier</item>
+    </string-array>
+    <string name="app_icon">App Icon</string>
+
+</resources>
+
+

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="zmaj_blue">#4169E1</color>
+    <color name="zmaj_red">#FF355D</color>
+    <color name="zmaj_purple">#8B5CF6</color>
+    <color name="zmaj_green">#24D2B5</color>
+    <color name="zmaj_orange">#FFA927</color>
+    <color name="zmaj_bg">#10142E</color>
+    <color name="zmaj_card">#23244D</color>
+    <color name="zmaj_glass">#23244D99</color>
+    <color name="white">#FFFFFF</color>
+    <color name="text_dark">#171F32</color>
+    <color name="text_light">#F4F7FC</color>
+    <color name="input_bg">#171F32</color>
+</resources>

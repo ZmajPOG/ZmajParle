@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_gradient"
+    android:animateLayoutChanges="true"
+    android:paddingTop="48dp"
+    >
+
+
+
+
+    <FrameLayout
+        android:id="@+id/titleBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="18dp"
+        android:layout_marginRight="18dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginBottom="12dp"
+        >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:src="@drawable/title_glow"
+            android:scaleType="center"
+            android:layout_gravity="center"
+            android:alpha="0.8"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="16dp"
+            android:gravity="center"
+            android:background="@drawable/title_outline"
+            >
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/ic_dragon"
+                android:contentDescription="Dragon" />
+
+            <TextView
+                android:id="@+id/titleText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ZmajParle"
+                android:textSize="28sp"
+                android:textStyle="bold"
+                android:textColor="@color/zmaj_green"
+                android:layout_marginLeft="12dp"
+                android:shadowColor="#B0FFD7"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="6"/>
+        </LinearLayout>
+    </FrameLayout>
+
+
+
+    <Button
+        android:id="@+id/addPhraseBtn"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:text="Add Phrase"
+        android:background="@drawable/btn_outline"
+        android:textColor="@color/zmaj_red"
+        android:textStyle="bold"
+        android:layout_below="@id/titleBar"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/buildSentenceBtn"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:text="Build Sentence"
+        android:background="@drawable/btn_outline"
+        android:textColor="@color/zmaj_green"
+        android:textStyle="bold"
+        android:layout_below="@id/addPhraseBtn"
+        android:layout_marginTop="12dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_centerHorizontal="true" />
+
+
+    <EditText
+        android:id="@+id/tagSearchEdit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buildSentenceBtn"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+        android:background="@drawable/btn_outline"
+        android:hint="🔍 Search by tag (e.g. food, friend, school...)"
+        android:textColor="@color/text_light"
+        android:textColorHint="@color/zmaj_green"
+        android:padding="14dp"
+        android:textSize="16sp"/>
+
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/phrasesRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:layout_below="@id/tagSearchEdit"
+        android:layout_above="@+id/bottomSpace"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+        android:padding="8dp"/>
+
+    <Space
+        android:id="@+id/bottomSpace"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>
